@@ -1,10 +1,10 @@
 roguelike
 =========
 
-tasks
+#tasks
 
-skills
-  skillshot
+##skills
+  - skillshot
 	targeted / aoe cast
 	has behaviors for projectile flight, projectile hit, projectile trail
 	damage
