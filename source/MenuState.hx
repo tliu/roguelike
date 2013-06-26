@@ -24,6 +24,7 @@ class MenuState extends FlxState
 		#if !FLX_NO_MOUSE
 		FlxG.mouse.show();
 		#end
+		add(new FlxText(0,0,100,"Hello World!")); 
 	}
 	
 	override public function destroy():Void
