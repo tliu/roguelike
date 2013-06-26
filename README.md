@@ -3,35 +3,35 @@ roguelike
 
 #tasks
 
-##skills
+###skills
   - skillshot
-	targeted / aoe cast
-	has behaviors for projectile flight, projectile hit, projectile trail
-	damage
-	cooldown
+	- targeted / aoe cast
+	- has behaviors for projectile flight, projectile hit, projectile trail
+	- damage
+	- cooldown
 
-loot
-	modifiers have points based on how strong
-	modify skill behaviors
-		flight
-		hit
-		trail
-		damage
+###loot
+	- modifiers have points based on how strong
+	- modify skill behaviors
+		-- flight
+		-- hit
+		-- trail
+		-- damage
 
-maps
-	generation
+###maps
+	- generation
 
-monsters
-	ai
-	attacks with behaviors which can be mixed and matched
+###monsters
+	- ai
+	- attacks with behaviors which can be mixed and matched
 
-cards
-	monster hp
-	exp amount
-	elemental
-	monster speed
-	monster size
-	dungeon size
-	loot rarity
+###cards
+	- monster hp
+	- exp amount
+	- elemental
+	- monster speed
+	- monster size
+	- dungeon size
+	- loot rarity
 
-save files
+###save files
