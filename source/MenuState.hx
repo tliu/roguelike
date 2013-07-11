@@ -16,6 +16,7 @@ class MenuState extends FlxState
 {
 	override public function create():Void
 	{
+		FlxG.camera.antialiasing = true;
 		#if !neko
 		FlxG.bgColor = 0xff131c1b;
 		#else
@@ -24,7 +25,14 @@ class MenuState extends FlxState
 		#if !FLX_NO_MOUSE
 		FlxG.mouse.show();
 		#end
-		add(new FlxText(0,0,100,"Hello World!")); 
+		var x= new FlxText(0,0,100,"Hello World!");
+		x.antialiasing = true;
+		add(x); 
+
+		var player = new Player();
+		player.x = 10;
+		player.y = 10;
+		add(player);
 	}
 	
 	override public function destroy():Void
