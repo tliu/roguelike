@@ -10,23 +10,20 @@ import org.flixel.FlxSave;
 import org.flixel.FlxSprite;
 import org.flixel.FlxState;
 import org.flixel.FlxText;
-import org.flixel.FlxU;
 
 class MenuState extends FlxState
 {
 	override public function create():Void
 	{
-		FlxG.camera.antialiasing = true;
 		#if !neko
-		FlxG.bgColor = 0xff131c1b;
+		FlxG.bgColor = 0xffffffff;
 		#else
-		FlxG.camera.bgColor = {rgb: 0x131c1b, a: 0xff};
+		FlxG.camera.bgColor = {rgb: 0xffffff, a: 0xff};
 		#end		
 		#if !FLX_NO_MOUSE
 		FlxG.mouse.show();
 		#end
 		var x= new FlxText(0,0,100,"Hello World!");
-		x.antialiasing = true;
 		add(x); 
 
 		var player = new Player();
